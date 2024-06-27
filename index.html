@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Using Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container border-radius">
+        <h1>Contact Us</h1>
+        <form id="form">
+            <div class="col-1">
+                <div class="row-1">
+                    <label for="first-name">First Name <span class="green">*</span></label> <br>
+                    <input type="text" id="first-name">
+                    <p class="error-state">The field is required</p>
+                </div>
+                <div class="row-2">
+                    <label for="first-name">Last Name  <span class="green">*</span></label> <br>
+                    <input type="text" id="last-name">
+                    <p class="error-state">The field is required</p>
+                </div>
+            </div>
+            <div class="col-2 p-t-2">
+                <label for="email">Email Address  <span class="green">*</span></label> <br>
+                <input type="text" id="email">
+                <p class="error-state">Please enter a valid email address</p>
+            </div>
+            <div class="col-3 p-t-2">
+                <label>Query Type  <span class="green">*</span></label>
+                <div class="col-3-child">
+                    <div class="row-1 border-radius">
+                        <div class="circle">
+                            <img src="icon-radio-selected.svg">
+                        </div>
+                        <p>General Query</p>
+                    </div>
+                    <div class="row-2 border-radius">
+                        <div class="circle">
+                            <img src="icon-radio-selected.svg">
+                        </div>
+                        <p>Support Request</p>
+                    </div>
+                </div>
+                <p class="error-state">Please select a query type</p>
+            </div>
+            <div class="col-4 p-t-2">
+                <label for="message">Message  <span class="green">*</span></label> <br>
+                <textarea id="message" class="border-radius"></textarea>
+                <p class="error-state">The field is required</p>
+            </div>
+            <div class="col-5 p-t-2">
+                <div class="col-5-child">
+                    <div class="square">
+                        <img src="icon-checkbox-check.svg" alt="icon checkbox image">
+                    </div>
+                    <p>I consent to being contacted by the team  <span class="green">*</span></p>
+                </div>
+                <p class="error-state">To submit this form, please consent to being contacted</p>
+            </div>
+            <div class="col-6 p-t-2">
+                <button id="submit-btn" class="border-radius">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
